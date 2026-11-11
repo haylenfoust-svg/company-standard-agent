@@ -1,0 +1,11 @@
+name: company-standard-agent
+version: 1.0.0
+description: "公司标准 AI 工作助手:中文专业助手 + Windows 避坑技能 + 每周技能自动更新"
+hermes_requires: ">=0.23.0"
+author: "haylenfoust-svg"
+license: "MIT"
+
+env_requires:
+  - name: HERMES_CUSTOM_QWEN_API_KEY
+    description: "Qwen 模型 API Key(阿里云企业端点,向公司管理员申请)"
+    required: true

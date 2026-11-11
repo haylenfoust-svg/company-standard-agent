@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "id": "weekly-skills-update",
+      "name": "每周技能更新",
+      "prompt": "执行命令 `hermes -p company-standard-agent skills update`(更新本 profile 安装的技能;若提示该 profile 不存在,改用 `hermes skills update`)。然后用中文简要报告结果:如果有技能被更新,列出技能名和新版本;如果全部已是最新,回复一句\"技能均已是最新\";如果命令失败,给出错误原因摘要和建议的处理办法。",
+      "skills": [],
+      "skill": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "display": "every monday 9am"
+      },
+      "schedule_display": "every monday 9am",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "enabled_toolsets": [
+        "terminal"
+      ]
+    }
+  ]
+}
